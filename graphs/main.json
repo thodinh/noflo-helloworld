@@ -15,13 +15,34 @@
             "metadata": {
                 "label": "Multiply",
                 "x": 684,
-                "y": 252,
+                "y": 216,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Output_x8aar": {
+            "component": "core/Output",
+            "metadata": {
+                "label": "Output",
+                "x": 828,
+                "y": 216,
                 "width": 72,
                 "height": 72
             }
         }
     },
     "connections": [
+        {
+            "src": {
+                "process": "math/Multiply_9xyl2",
+                "port": "product"
+            },
+            "tgt": {
+                "process": "core/Output_x8aar",
+                "port": "in"
+            },
+            "metadata": {}
+        },
         {
             "data": "6",
             "tgt": {
