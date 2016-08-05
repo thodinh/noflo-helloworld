@@ -1,0 +1,40 @@
+{
+    "caseSensitive": false,
+    "properties": {
+        "name": "main",
+        "environment": {
+            "type": "all"
+        }
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "math/Multiply_9xyl2": {
+            "component": "math/Multiply",
+            "metadata": {
+                "label": "Multiply",
+                "x": 684,
+                "y": 252,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "data": "6",
+            "tgt": {
+                "process": "math/Multiply_9xyl2",
+                "port": "multiplier"
+            }
+        },
+        {
+            "data": "7",
+            "tgt": {
+                "process": "math/Multiply_9xyl2",
+                "port": "multiplicand"
+            }
+        }
+    ]
+}
